@@ -24,29 +24,29 @@ class EventSeeder extends Seeder
             $newEvent->available_tickets = $faker->randomNumber(3, false);
             $newEvent->save();
         }
-        // $events = [,
-        //     [
-        //         'name' => 'Concerto 2',
-        //         'date' => '2024-02-12',
-        //         'available_tickets' => 300
-        //     ],
-        //     [
-        //         'name' => 'Concerto 3',
-        //         'date' => '2024-01-15',
-        //         'available_tickets' => 300
-        //     ],
-        //     [
-        //         'name' => 'Concerto 4',
-        //         'date' => '2024-03-15',
-        //         'available_tickets' => 150
-        //     ]
-        // ];
+        $events = [
+            [
+                'name' => 'Inaugurazione',
+                'date' => '2024-02-12',
+                'available_tickets' => 300
+            ],
+            [
+                'name' => 'Partita',
+                'date' => '2024-01-15',
+                'available_tickets' => 300
+            ],
+            [
+                'name' => 'Concerto ',
+                'date' => '2024-03-15',
+                'available_tickets' => 150
+            ]
+        ];
 
-        // foreach ($events as $event) {
+        foreach ($events as $event) {
 
-        //     $newEvent = new Event();
-        //     $newEvent->fill($event);
-        //     $newEvent->save();
-        // }
+            $newEvent = new Event();
+            $newEvent->fill($event);
+            $newEvent->save();
+        }
     }
 }

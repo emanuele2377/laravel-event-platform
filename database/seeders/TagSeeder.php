@@ -17,22 +17,22 @@ class TagSeeder extends Seeder
     {
         $tags = [
             [
-                'name' => 'country',
+                'name' => 'sala macchine',
+            ],
+            [
+                'name' => 'museo',
             ],
             [
                 'name' => 'rock',
             ],
             [
-                'name' => 'pop',
+                'name' => 'classico',
             ],
             [
-                'name' => 'hip hop',
+                'name' => 'juve-Real madrid',
             ],
             [
-                'name' => 'trance',
-            ],
-            [
-                'name' => 'classica',
+                'name' => 'barcellona-real madrid',
             ],
         ];
 
