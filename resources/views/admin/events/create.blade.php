@@ -32,7 +32,7 @@
                 <div class="mb-3">
                     <label for="date" class="form-label">date</label>
 
-                    <input type="text" class="form-control @error('date') is-invalid @enderror" id="date"
+                    <input type="date" class="form-control @error('date') is-invalid @enderror" id="date"
                         name="date">
                     @error('date')
                         <div class="invalid-feedback">{{ $message }}</div>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="available_tickets" class="form-label">available_tickets</label>
-                    <input type="text" class="form-control" id="available_tickets" name="available_tickets">
+                    <input type="number" class="form-control" id="available_tickets" name="available_tickets">
                 </div>
                 <div class="mb-3">
                     <label for="tag" class="form-label">Tag</label>

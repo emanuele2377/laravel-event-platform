@@ -21,17 +21,15 @@ class EventRequest extends FormRequest
      *
      * @return array<string, mixed>
      */
+
+
     public function rules()
     {
         return [
             "name" => ["required", "min:5", "max:50"],
-            "date" => "",
-            "available_tickets" => ["required"],
-            "tags" => []
+            "date" => ["required"],
+            "available_tickets" => ["required", "numeric", "min:0"],
+            "tags" => ["array"],
         ];
     }
 }
-// [
-//     'tags'         => 'present|array',
-//     'tags.*'       => 'filled|max:255|exists:tags,id'
-// ]
